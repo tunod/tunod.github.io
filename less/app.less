@@ -1,0 +1,120 @@
+@import '../vendor/less/prefixer.less';
+@import '../vendor/less/mixins.less';
+@import 'vars.less';
+
+.sticky-footer(60px);
+
+html, body{
+    font-family:@font-primary;
+    font-size: 14px;
+    color:@color-text;
+    background: #000;
+}
+
+body{
+    background: transparent;
+}
+
+figure, figcaption{
+    display:block;
+    margin:0;
+    padding:0;
+}
+
+h1, h2, h3, h4, h5, h6{
+    font-family:@font-primary;
+    margin-top:0;
+}
+
+a, a:hover{
+    color:@color-primary;
+}
+
+.navbar .navbar-brand.logo{
+    padding:10px 20px;
+    display:block;
+    z-index:2;
+    img{
+        max-width: 100%;
+    }
+    .fa{
+        font-size:1.5em;
+        color:@color-primary;
+    }
+}
+
+.close{
+    z-index: 2;
+}
+
+.main{
+    padding:40px 0;
+}
+
+.main-footer{
+    background: @color-primary;
+    color:#fff;
+    a{
+        color:#fff;
+    }
+}
+
+.main-footer > .container{
+    padding-top:20px;
+}
+
+#happycookies{
+    position: fixed;
+    left: 0px;
+    right: 0px;
+    bottom: 0px;
+    height: auto;
+    min-height: 21px;
+    z-index: 255;
+    background-color: #222;
+    color: #fff;
+    line-height: 21px;
+    padding: 15px 20px;
+    font-family: arial, sans-serif;
+    font-size: 14px;
+    opacity: 1;
+    background-position: initial initial;
+    background-repeat: initial initial;
+    z-index: 10000;
+}
+#happycookies .happycookies-close{
+    float: right;
+    padding-left: 5px;
+    cursor: pointer;
+    z-index: 100;
+}
+
+#happycookies .happycookies-text{
+    text-align: center;
+}
+
+#happycookies .happycookies-text a{
+    text-decoration-line: none;
+    color: #ddd;
+}
+
+.account-form{
+    max-width: 400px;
+    margin:20px auto;
+}
+
+.btn-primary{
+    .button-variant(#fff, @color-primary, @color-primary);
+}
+
+.marketing-text{
+    color:#fff;
+    text-shadow:1px 1px rgba(0,0,0,0.5);
+    .btn{
+        text-shadow:none;
+    }
+}
+
+.bg-gallery-items{
+    opacity:0.75;
+}
